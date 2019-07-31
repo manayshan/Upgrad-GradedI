@@ -1,0 +1,33 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.header{
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+.signBtn{
+	color: white;
+	background-color: blue;
+	margin: 5px;
+	padding-right: 20px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-width: 0px;
+}
+.scribblerlogo{
+	color: blue;
+	font-size: 40px;
+	margin:0px;
+	padding: 0px;
+	font-family:Satisfy;
+
+}
+.scribblertagline{
+	margin: 0px;
+	padding: 0px;
+	font-family:Marck Script;
+}
+.main-container-div{
+	display: flex;
+}
