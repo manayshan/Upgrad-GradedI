@@ -5,6 +5,10 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 	justify-content: center;
 	justify-content: space-between;
 }
+.main-container-div{
+	display:inline-flex;
+	justify-content: center;
+}
 .signBtn{
 	color: white;
 	background-color: blue;
@@ -14,6 +18,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 	padding-top:10px;
 	padding-bottom:10px;
 	border-width: 0px;
+	margin-top: 20px;
 }
 .scribblerlogo{
 	color: blue;
@@ -30,4 +35,31 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 }
 .main-container-div{
 	display: flex;
+}
+.postButtons{
+	position: absolute;
+	top: 42%;
+	right: 43%;
+}
+.postBtn{
+	background-color: #F0CD19;
+	font-size: 18px;
+	padding: 8px;
+	margin:3px;
+	font-weight:bold;
+}
+.modal-title{
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	font-family: Abel;
+}
+.signUpSignIn{
+	text-align: center;
+	font-weight: bold;
+	margin: 10px;
+	font-size: 20px;
+}
+.modalmargin{
+	margin-bottom: 15px;
 }
