@@ -1,12 +1,13 @@
 .post {
     position: relative;
-    width: 90%;
+    width: 42%;
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
+    margin: 10px 60px 10px 60px;
     float:left;
     border-radius: 15px;
+    overflow: hidden;
 }
     
 .post-left {
@@ -33,6 +34,7 @@
     color: #2b312b;
     font-size: 25px;
     height: 25px;
+    margin: 5px 10px 20px 5px;
     }
 .post-more {
     float: right;
@@ -45,15 +47,23 @@
 }
 .post-desc{
     height: 100px;
-    margin-bottom: 0 !important;
+    margin-bottom: 0px !important;
+    margin-right: 40px;
+    position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em; /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.2em;
+    text-align:left;
 }
 
-body {
+.body {
     height: 100%;
     width: 100%;
     position: relative;
     margin: 0 !important;
-    color: #fff;
+    
     background-color: orange;
     background-size: 2000% 2000%;
 }
@@ -61,4 +71,36 @@ body {
     height: 100%;
     width: 100%;
 
+}
+.postRow{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.trashBtn{
+    padding: 0;
+    border:none;
+    background:none;
+    position: relative;
+    float: right;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.modalHeading{
+    text-align: center;
+}
+.viewPost{
+    padding: 0;
+    border:none;
+    background:none;
+    position: relative;
+    float: right;
+    margin: 5px 5px 10px 5px;
+    font-weight: bold;
+}
+.trashButton{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px
 }
