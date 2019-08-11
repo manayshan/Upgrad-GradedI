@@ -48,8 +48,11 @@ function addComment()
 	var comment = document.getElementById('commentArea');
 	var commentBlocks = document.getElementById('commentBlocks');
 	commentBlocks.innerHTML = '';
-	commentArray.push(comment.value);
-	comment.value ='';
+	if(comment.value != '')
+	{
+		commentArray.push(comment.value);
+		comment.value ='';
+	}
 	for ( var i = commentArray.length-1; i>=0; i--)
 	{
 		var element = document.createElement('p');

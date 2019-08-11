@@ -5,9 +5,6 @@
         <link href='..\css\header.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
         <link href='..\css\font.css' rel='stylesheet' type='text/css'>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
     <style>        
     </style>     
 </head>
@@ -24,6 +21,7 @@
                     <button type="button" class="signBtn" data-toggle="modal" data-target="#myModalSignUp">Sign Up</button>
                 </div>
         </div>
+
         <div class="blogContent">
         <div id="blogTitle" class="blogTite">
             <h contentEditable="false" id="blogTitleNew">The legacy of Jimi Hendrix</h>
@@ -45,9 +43,10 @@
         <button id="likeButton" onclick="postLiked()"><i class="fa fa-thumbs-up"></i> Like</button>
         <br>
         <pre id="likeText">Be the first one to like this!</pre>
-
-        <textarea id="commentArea" placeholder="Leave a comment..."></textarea><br>
-        <button id="commentButton" onclick="addComment()">Comment</button>
+        <form>
+            <textarea id="commentArea" placeholder="Leave a comment..." required="required"></textarea><br>
+            <button id="commentButton" type="submit" onclick="addComment()">Comment</button>
+        </form>
         <div class="commentSection">
             <h3>All Comments</h3>
             <div id="commentGreyArea">
@@ -58,6 +57,8 @@
         </div>
 
     </div>
+
+
     <script src="..\js\post.js" defer></script>
     <script src="..\js\header.js">             
     </script>
