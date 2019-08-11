@@ -67,10 +67,10 @@
 }
 #commentArea{
 	height: 100px;
-	width: 800px;
+	width: 75%;
 }
 #commentGreyArea{
-	width: 83%;
+	width: 75%;
   	background-color: #aeacac;
   	padding: 1%;
 }
